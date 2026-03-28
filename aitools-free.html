@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Tools Free - 100% Free AI Suite | No Credit Card</title>
+    <meta name="description" content="Get FREE access to 10+ AI Tools instantly! ChatGPT, Image Generator, Video Editor & more. No credit card required. Limited time offer!">
+    <style>
+        :root {
+            --primary: #5b67ff;
+            --secondary: #7f3cff;
+            --accent: #ff6b6b;
+            --dark: #0f172a;
+            --light: #f4f6ff;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+            color: #1f2933;
+            background: #ffffff;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        .container {
+            width: min(1100px, 100% - 2rem);
+            margin: 0 auto;
+        }
+        header {
+            position: sticky;
+            top: 0;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: #fff;
+            z-index: 10;
+            box-shadow: 0 8px 20px rgba(15, 23, 42, 0.2);
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+        .logo {
+            font-weight: 700;
+            font-size: 1.2rem;
+            letter-spacing: 0.5px;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+        button, .btn {
+            border: none;
+            cursor: pointer;
+            border-radius: 999px;
+            font-weight: 600;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .cta-button {
+            background: #ffd25a;
+            color: #1f2933;
+            padding: 0.8rem 1.8rem;
+            box-shadow: 0 10px 20px rgba(255, 210, 90, 0.4);
+        }
+        .cta-button:hover { transform: translateY(-2px); }
+        main { overflow: hidden; }
+        section { padding: clamp(3rem, 5vw, 5rem) 0; }
+        .hero {
+            background: radial-gradient(circle at top, rgba(255,255,255,0.25), transparent 60%), linear-gradient(135deg, var(--primary), var(--secondary));
+            color: #fff;
+            text-align: center;
+            padding-top: clamp(5rem, 12vw, 8rem);
+        }
+        .hero h1 {
+            font-size: clamp(2.2rem, 6vw, 3.8rem);
+            margin: 1rem 0;
+            font-weight: 800;
+        }
+        .hero p { opacity: 0.9; }
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+            background: rgba(255, 255, 255, 0.15);
+            padding: 0.35rem 0.9rem;
+            border-radius: 999px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 0.7rem;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%,100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        .main-cta {
+            margin-top: 1.5rem;
+            background: var(--accent);
+            color: #fff;
+            padding: 1rem 2.4rem;
+            font-size: 1.05rem;
+            box-shadow: 0 25px 35px rgba(255, 107, 107, 0.4);
+        }
+        .main-cta:hover { transform: translateY(-4px); }
+        .urgency {
+            margin-top: 1.5rem;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+        .features {
+            background: var(--light);
+        }
+        .section-title {
+            text-align: center;
+            font-size: clamp(2rem, 4vw, 2.8rem);
+            color: var(--dark);
+        }
+        .section-sub {
+            text-align: center;
+            margin-top: 0.6rem;
+            color: #475569;
+        }
+        .grid {
+            display: grid;
+            gap: 1.5rem;
+            margin-top: 2.5rem;
+        }
+        .features-grid {
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        }
+        .feature-card {
+            background: #fff;
+            padding: 1.8rem;
+            border-radius: 1.2rem;
+            box-shadow: 0 20px 45px rgba(15, 23, 42, 0.08);
+            text-align: center;
+            transition: transform 0.2s ease;
+        }
+        .feature-card:hover { transform: translateY(-6px); }
+        .feature-icon {
+            width: 70px;
+            height: 70px;
+            margin: 0 auto 1rem;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            font-size: 1.8rem;
+            background: rgba(91, 103, 255, 0.12);
+            color: var(--primary);
+        }
+        .stats {
+            background: linear-gradient(135deg, var(--primary), #2f3ac9);
+            color: #fff;
+        }
+        .stats-grid {
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            text-align: center;
+            gap: 1.5rem;
+        }
+        .stat-card {
+            padding: 1.5rem 0.5rem;
+        }
+        .stat-number {
+            font-size: 2.4rem;
+            font-weight: 800;
+            display: block;
+        }
+        .pricing {
+            background: #fafbff;
+        }
+        .pricing-grid {
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1.5rem;
+        }
+        .price-card {
+            background: #fff;
+            border-radius: 1.5rem;
+            padding: 2.2rem;
+            box-shadow: 0 25px 50px rgba(15, 23, 42, 0.08);
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            border: 2px solid transparent;
+        }
+        .price-card.highlight {
+            border-color: var(--accent);
+            transform: translateY(-5px);
+        }
+        .price {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--accent);
+        }
+        ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            color: #475569;
+            font-size: 0.95rem;
+        }
+        ul li::before {
+            content: "✅";
+            margin-right: 0.4rem;
+        }
+        .footer-cta {
+            background: var(--dark);
+            color: #e2e8f0;
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        input[type="email"] {
+            padding: 1rem 1.2rem;
+            border-radius: 999px;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            background: rgba(255, 255, 255, 0.08);
+            color: #fff;
+            font-size: 1rem;
+        }
+        input[type="email"]::placeholder { color: rgba(255, 255, 255, 0.7); }
+        input[type="email"]:focus {
+            outline: none;
+            border-color: #ffd25a;
+            background: rgba(255, 255, 255, 0.15);
+        }
+        .submit-btn {
+            padding: 1rem;
+            background: linear-gradient(135deg, var(--accent), #ff9776);
+            color: #fff;
+            font-size: 1.05rem;
+            box-shadow: 0 20px 35px rgba(255, 107, 107, 0.3);
+        }
+        .form-note {
+            min-height: 1.25rem;
+            font-size: 0.95rem;
+            color: #a3bffa;
+        }
+        .footnote {
+            margin-top: 1.5rem;
+            font-size: 0.85rem;
+            opacity: 0.7;
+        }
+        @media (max-width: 600px) {
+            nav { flex-direction: column; gap: 0.8rem; }
+            .price { font-size: 2rem; }
+            .feature-card { padding: 1.4rem; }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="container">
+        <nav>
+            <div class="logo">🤖 AI Tools Free</div>
+            <button class="cta-button" data-scroll="#pricing">Get Free Access</button>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="container">
+            <p class="badge">⏰ LIMITED TIME BONUS</p>
+            <h1>🚀 10+ AI Tools FREE Forever</h1>
+            <p>No Credit Card • Instant Access • Unlimited Usage</p>
+            <button class="main-cta" data-scroll="#formSection">🎁 Claim Your FREE Access Now</button>
+            <div class="urgency">⚡ 12,847+ creators joined today | Only 2,153 spots left</div>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">What You Get FREE</h2>
+            <p class="section-sub">Chat, create, edit, and launch ideas faster than ever.</p>
+            <div class="grid features-grid">
+                <article class="feature-card">
+                    <div class="feature-icon">💬</div>
+                    <h3>AI ChatBot</h3>
+                    <p>Unlimited GPT-4 style conversations for work or play.</p>
+                </article>
+                <article class="feature-card">
+                    <div class="feature-icon">🖼️</div>
+                    <h3>Image Generator</h3>
+                    <p>Turn text prompts into stunning visuals instantly.</p>
+                </article>
+                <article class="feature-card">
+                    <div class="feature-icon">🎬</div>
+                    <h3>Video Editor</h3>
+                    <p>AI trimming, captions, and smart effects on demand.</p>
+                </article>
+                <article class="feature-card">
+                    <div class="feature-icon">✍️</div>
+                    <h3>Content Writer</h3>
+                    <p>Blogs, ads, captions—ready in seconds with one click.</p>
+                </article>
+                <article class="feature-card">
+                    <div class="feature-icon">👨‍💻</div>
+                    <h3>Code Generator</h3>
+                    <p>Ship perfect snippets in any language instantly.</p>
+                </article>
+                <article class="feature-card">
+                    <div class="feature-icon">🎵</div>
+                    <h3>Music Creator</h3>
+                    <p>Generate royalty-free tracks for podcasts & videos.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="container">
+            <div class="grid stats-grid">
+                <div class="stat-card">
+                    <span class="stat-number" data-target="500000">0</span>
+                    Happy Users
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" data-target="10000000">0</span>
+                    AI Images Created
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" data-target="99.9" data-suffix="%">0</span>
+                    Uptime Reliability
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" data-target="24" data-suffix="/7">0</span>
+                    Human Support
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <h2 class="section-title">Choose Your Plan</h2>
+            <p class="section-sub">Start free, upgrade when you’re ready for warp speed.</p>
+            <div class="grid pricing-grid">
+                <article class="price-card">
+                    <div class="badge" style="background: rgba(91,103,255,0.15); color: var(--primary);">FREE FOREVER</div>
+                    <h3>Starter</h3>
+                    <p class="price">₹0</p>
+                    <p>Unlimited tools & instant activation.</p>
+                    <ul>
+                        <li>10+ AI apps unlocked</li>
+                        <li>Unlimited generations</li>
+                        <li>Community support</li>
+                        <li>No credit card ever</li>
+                    </ul>
+                    <button class="cta-button" data-scroll="#formSection">Get Started Free</button>
+                </article>
+                <article class="price-card highlight">
+                    <div class="badge" style="background: rgba(255, 255, 255, 0.15); color: var(--accent);">MOST POPULAR</div>
+                    <h3>Pro Creator</h3>
+                    <p class="price">₹499<span style="font-size:0.9rem;font-weight:500;">/month</span></p>
+                    <p>Scale faster with premium speed & skills.</p>
+                    <ul>
+                        <li>Everything in Starter</li>
+                        <li>Priority queue + API</li>
+                        <li>Advanced editing modes</li>
+                        <li>1:1 onboarding</li>
+                    </ul>
+                    <button class="main-cta" data-scroll="#formSection" style="box-shadow:none;">Unlock Pro Access</button>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer-cta" id="formSection">
+        <div class="container">
+            <h2 class="section-title" style="color:#fff;">Ready to Unlock AI Power?</h2>
+            <p>Join 500K+ creators who automate content, code, and creativity every day.</p>
+            <form id="leadForm">
+                <input id="emailInput" type="email" placeholder="Enter your email for instant access" required>
+                <button class="submit-btn" type="submit">🎁 Get FREE Access Now</button>
+                <p class="form-note" id="formMessage"></p>
+            </form>
+            <p class="footnote">🔒 100% Safe • No spam • Cancel anytime</p>
+        </div>
+    </section>
+</main>
+
+<script>
+(function () {
+    const scrollLinks = document.querySelectorAll('[data-scroll]');
+    scrollLinks.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const target = document.querySelector(btn.getAttribute('data-scroll'));
+            if (target) target.scrollIntoView({ behavior: 'smooth' });
+        });
+    });
+
+    const counters = document.querySelectorAll('.stat-number');
+    const animateCounter = (el) => {
+        const target = Number(el.dataset.target);
+        const suffix = el.dataset.suffix || '';
+        const duration = 1600;
+        const startTime = performance.now();
+        const start = 0;
+        function update(now) {
+            const progress = Math.min((now - startTime) / duration, 1);
+            const value = start + (target - start) * progress;
+            el.textContent = value.toLocaleString(undefined, {
+                maximumFractionDigits: target < 100 ? 1 : 0
+            }) + suffix;
+            if (progress < 1) requestAnimationFrame(update);
+        }
+        requestAnimationFrame(update);
+    };
+    const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                animateCounter(entry.target);
+                obs.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.3 });
+    counters.forEach(counter => observer.observe(counter));
+
+    const form = document.getElementById('leadForm');
+    const emailInput = document.getElementById('emailInput');
+    const message = document.getElementById('formMessage');
+
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const email = emailInput.value.trim();
+        if (!email) return;
+        message.textContent = `🎉 धन्यवाद! एक्सेस लिंक ${email} पर भेज दिया गया है।`;
+        emailInput.value = '';
+        setTimeout(() => { message.textContent = ''; }, 5000);
+    });
+})();
+</script>
+</body>
+</html>
